@@ -3,8 +3,8 @@ TGM Plugin Activation Modified, Use unique namespace to be able to use multiple 
 
 ==================
 
-We Strongly Recommended to use this plugin in WordPress Plugins and Not inside WordPress Themes
-For WordPress Themes, Use tgmpa-unique-cls instead
+We Strongly Recommended to use this plugin in WordPress Plugins and Not inside WordPress Themes,
+For WordPress Themes Use tgmpa-unique-cls project instead
 https://github.com/Oxibug/tgmpa-unique-cls
 
 ==================
