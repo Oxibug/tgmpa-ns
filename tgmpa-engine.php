@@ -1,5 +1,5 @@
 <?php
-namespace OxibugTheme;
+namespace OxibugTGMPA;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
