@@ -1192,7 +1192,7 @@ class TGM_Plugin_Activation {
                     unset( $plugin_slug );
 
                     $count          = count( $plugin_group );
-                    $linked_plugins = array_map( array( __NAMESPACE__ . '\\TGMPA_Utils', 'wrap_in_em' ), $linked_plugins );
+                    $linked_plugins = array_map( __NAMESPACE__ . '\TGMPA_Utils::wrap_in_em', $linked_plugins );
                     $last_plugin    = array_pop( $linked_plugins ); // Pop off last name to prep for readability.
                     $imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'tgmpa' ) . ' ' . $last_plugin );
 
@@ -2972,7 +2972,7 @@ class TGMPA_List_Table extends \WP_List_Table {
                 echo '<div id="message" class="error"><p>', wp_kses_post( $activate->get_error_message() ), '</p></div>';
             } else {
                 $count        = count( $plugin_names ); // Count so we can use _n function.
-                $plugin_names = array_map( array( 'TGMPA_Utils', 'wrap_in_strong' ), $plugin_names );
+                $plugin_names = array_map( __NAMESPACE__ . '\TGMPA_Utils::wrap_in_strong', $plugin_names );
                 $last_plugin  = array_pop( $plugin_names ); // Pop off last name to prep for readability.
                 $imploded     = empty( $plugin_names ) ? $last_plugin : ( implode( ', ', $plugin_names ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'tgmpa' ) . ' ' . $last_plugin );
 
